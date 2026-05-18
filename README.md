@@ -5,6 +5,6 @@ package for practicing nav2 and action, ATOM
 1. run gazebo or bringup
 2. run nav2
 3. use under command
-bash```
+```bash
 ~$ ros2 run waypoint waypoint_node
 ```
