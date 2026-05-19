@@ -80,7 +80,8 @@ class WaypointNode(Node):
                 self.get_logger().info("Mission complete.")
 
         else:
-            self.get_logger().warn(f"Navigation failed with status: {status}")
+            self.get_logger().warn(f"Navigation failed with status: {status}\nRetrying...")
+            self.send_goal(self.waypoints[self.current_target])
 
 
 def main(args=None):
