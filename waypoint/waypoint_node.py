@@ -75,7 +75,7 @@ class WaypointNode(Node):
 
         if status == GoalStatus.STATUS_SUCCEEDED:
             self.get_logger().info(
-                f"Waypoint {self.current_index + 1} reached successfully"
+                f"Waypoint {self.current_index + 1} reached successfully\n"
             )
 
             # Check last waypoint
